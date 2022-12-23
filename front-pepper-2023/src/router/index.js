@@ -29,7 +29,7 @@ const routes = [
     component: ForgotPasswordView
   },
   {
-    path: '/:catchAll(.*)', redirect: 'Login'
+    path: '/:catchAll(.*)', redirect: 'login'
   },
   {
     path: '/memberareas',
