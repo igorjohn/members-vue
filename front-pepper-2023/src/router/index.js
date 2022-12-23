@@ -1,3 +1,5 @@
+// Depois substituir "/area" por "/:area"
+
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginView from '../views/Login.vue';
 import ForgotPasswordView from '../views/ForgotPassword.vue';
@@ -27,7 +29,7 @@ const routes = [
     component: ForgotPasswordView
   },
   {
-    path: '/:catchAll(.*)', redirect:'Login'
+    path: '/:catchAll(.*)', redirect: 'Login'
   },
   {
     path: '/memberareas',
@@ -35,51 +37,51 @@ const routes = [
     component: MemberAreasView
   },
   {
-    path: '/:area',
+    path: '/area',
     component: MemberAreaView,
     children: [
       {
-        path: '/:area',
+        path: '/area',
         component: ProductsView
       },
       {
-        path: '/:area/:produto',
+        path: '/area/:produto',
         component: ContentsView
       },
       {
-        path: '/:area/:produto/:modulo/:conteudo',
+        path: '/area/:produto/:modulo/:conteudo',
         component: ClassroomView
       },
       {
-        path: '/:area/certificados',
+        path: '/area/certificados',
         component: CertificatesView
       },
       {
-        path: '/:area/criar-certificado',
+        path: '/area/criar-certificado',
         component: CreateCertificateView
       },
       {
-        path: '/:area/perfil',
+        path: '/area/perfil',
         component: ProfileView
       },
       {
-        path: '/:area/contato',
+        path: '/area/contato',
         component: ContactView
       },
       {
-        path: '/:area/alunos',
+        path: '/area/alunos',
         component: ManageStudentsView
       },
       {
-        path: '/:area/integracoes',
+        path: '/area/integracoes',
         component: IntegrationsView
       },
       {
-        path: '/:area/integracoes/pepper',
+        path: '/area/integracoes/pepper',
         component: IntegrationPepperView
       },
       {
-        path: '/:area/configuracoes',
+        path: '/area/configuracoes',
         component: SettingsView
       },
     ]
