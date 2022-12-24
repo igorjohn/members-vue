@@ -10,11 +10,10 @@ export default {
 
 <template>
 
-    <div class="h-screen w-screen px-4 pt-6 lg:pt-10 max-w-7xl mx-auto flex flex-col justify-center items-center pb-20 lg:pb-40">
-
+    <div class="md:h-screen w-screen px-4 pt-6 lg:pt-10 max-w-7xl mx-auto flex flex-col justify-center items-center pb-20 lg:pb-40">
 
         <!-- Logo -->
-        <div class="flex items-center justify-center mb-14">
+        <div class="flex items-center justify-center mb-14 mt-10 md:mt-4">
             <img src="../../assets/img/pepper-logo-dark.svg" class="h-6" />
         </div>
 

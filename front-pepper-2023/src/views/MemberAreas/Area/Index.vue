@@ -8,9 +8,9 @@ import { CheckIcon, ChevronUpDownIcon, PlusIcon } from '@heroicons/vue/20/solid'
 
 <script type="text/javascript">
 
-import Header from "@/components/Header.vue";
-import Sidebar from "@/components/Sidebar.vue";
-import CardCourse from "@/components/CardCourse.vue";
+import Header from "../../../components/Header.vue";
+import Sidebar from "../../../components/Sidebar.vue";
+import CardCourse from "../../../components/CardCourse.vue";
 
 export default {
     components: {
